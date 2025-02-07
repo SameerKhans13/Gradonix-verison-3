@@ -1,0 +1,181 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #000;
+    min-height: 100vh;
+    overflow: auto; /* Allow scrolling */
+  }
+  
+  /* Make main content always visible */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1;
+    background: #000;
+  }
+  
+  /* Welcome Message */
+  .welcome-message {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  .welcome-message h1 {
+    font-size: 48px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message p {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+  
+  /* Study Planner (Always Visible) */
+  .study-planner {
+    margin-top: 20px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.2);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Input Fields */
+  .study-planner label {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .study-planner input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .study-planner input:focus {
+    outline: none;
+    border-color: #2ecc71;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+  }
+  
+  /* Study Plan Button */
+  .study-planner button {
+    padding: 15px 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .study-planner button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Results Sections (Always Visible) */
+  #studyPlan,
+  #analysis,
+  #progress {
+    margin-bottom:20px;
+    margin-top: 20px;
+    padding: 25px;
+    border: 2px solid #3498db;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+  }
+  
+  #studyPlan:hover,
+  #analysis:hover,
+  #progress:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* Progress Chart */
+  #progressChart {
+    max-width: 800px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 16px;
+  }
+  
+  table th,
+  table td {
+    border: 2px solid #3498db;
+    padding: 12px;
+    text-align: left;
+  }
+  table th {
+    background: #34dbaeaf;
+    color: #fff;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background-color: transparent;
+  }
+  
+  table tbody tr:hover {
+    background-color: #c20ff4a6;
+  }
+  

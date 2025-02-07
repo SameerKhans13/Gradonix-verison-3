@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gradonix - Advanced 3D Background</title>
+  <link rel="shortcut icon" href="../logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/",
+        "gsap": "https://unpkg.com/gsap@3.12.2/index.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas class="webgl"></canvas>
+
+  <div class="content-wrapper">
+    <h1 class="main-title">Gradonix</h1>
+    <p class="subtitle">Revolutionizing Education with AI</p>
+    <div class="cta-container">
+      <!-- Buttons trigger routing with fade-out and include a ripple effect on click -->
+      <button class="cta-button" onclick="launchAI()" >Start AI Analysis</button>
+      <button class="cta-button" onclick="openLibrary()" >Explore Library</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
